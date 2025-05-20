@@ -2,6 +2,7 @@
 
 * Студент: [Сергей Кожевников](https://up.htmlacademy.ru/htmlcss-individual/2/user/2304421).
 * Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+* Сайт: [Мой проект "Седона"](https://sergeykss.github.io/2304421-sedona-2/)
 
 ---
 
