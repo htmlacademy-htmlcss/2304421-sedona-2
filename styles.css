@@ -4,3 +4,19 @@
      width: 1200px;
      height: 485px;
 }
+
+.filter {
+     background-image: url("images/fon_image.jpg");
+     background-size: cover;
+     width: 1200px;
+     height: 412px;
+}
+
+.filter-form-group {
+     border: none;
+     display: inline-block
+}
+
+ul {
+     list-style-type: none;
+}

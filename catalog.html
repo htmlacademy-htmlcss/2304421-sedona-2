@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalog HTML</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="page-header">
+    <a class="main-logo" href="index.html">
+      <img class="main-logo-image" src="images/logo.svg" width="140" height="70" alt="Логотип сайта">
+    </a>
+    <nav class="navigation">
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link" href="index.html">Главная</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О Седоне</a>
+        </li>
+        <li class="navigation-item navigation-item-current-page">
+          <a class="navigaton-link" href="catalog.html" aria-current="page">Гостиницы</a>
+        </li>
+      </ul>
+      <ul class="navigation-list navigation-user">
+        <li class="navigation-item">
+          <a class="navigation-link" href="#"><span class="visually-hidden">Поиск</span></a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#"><span class="visually-hidden">Избранное: 12 элементов</span></a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-button" href="#">Хочу сюда</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <section class="filter">
+    <h1 class="filter-title">Гостиницы Седоны</h1>
+    <div class="filter-container">
+      <a class="breadcrumbs-main" href="index.html"><span class="visually-hidden">На главную</span></a>
+      <a class="breadcrumbs-catalog" href="catalog.html" aria-current="page">Гостиницы</a>
+    </div>
+    <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+      <fieldset class="filter-form-group">
+        <legend class="filter-form-title">Инфраструктура:</legend>
+        <ul class="filter-form-list">
+          <li class="filter-form-item">
+            <input class="filter-form-control" type="checkbox" id="pool" name="pool" value="pool" checked />
+            <label class="filter-form-label" for="pool">Бассейн</label>
+          </li>
+          <li class="filter-form-item">
+            <input class="filter-form-control" type="checkbox" id="lot" name="lot" value="lot" checked />
+            <label class="filter-form-label" for="lot">Парковка</label>
+          </li>
+          <li class="filter-form-item">
+            <input class="filter-form-control" type="checkbox" id="w-f" name="wi-fi" value="wi-fi" />
+            <label class="filter-form-label" for="w-f">Wi-Fi</label>
+          </li>
+        </ul>
+
+      </fieldset>
+      <fieldset class="filter-form-group">
+        <legend class="filter-form-title">Тип Жилья:</legend>
+        <ul class="filter-form-list">
+          <li class="filter-form-item">
+            <input class="filter-form-control" type="radio" id="inn" name="accommodation" value="inn" checked />
+            <label class="filter-form-label" for="inn">Гостиница</label>
+          </li>
+          <li class="filter-form-item">
+            <input class="filter-form-control" type="radio" id="motel" name="accommodation" value="motel" />
+            <label class="filter-form-label" for="motel">Мотель</label>
+          </li>
+          <li class="filter-form-item">
+            <input class="filter-form-control" type="radio" id="apartment" name="accommodation" value="apartment" />
+            <label class="filter-form-label" for="apartment">Апартаменты</label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="filter-form-group">
+        <legend class="filter-form-title">Стоимость, &#8381:</legend>
+        <div class="filter-form-group-price">
+          <input class="filter-price-control" type="number" id="number" value="0" max="9000" min="0" placeholder="от" />
+          <input class="filter-price-control" type="number" id="number" value="9000" max="9000" min="0" placeholder="до" />
+        </div>
+      </fieldset>
+      <button class="form-button" type="submit">Применить</button>
+      <button class="form-button-reset" type="reset">Сбросить</button>
+    </form>
+  </section>
+</body>
+</html>
