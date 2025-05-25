@@ -1,14 +1,18 @@
-.gorgeous {
+.hero {
      background-image: url("images/index-background.jpg");
      background-size: cover;
-     width: 1200px;
      height: 485px;
+}
+
+.subscription {
+     background-image: url("images/Subscribe.jpg");
+     background-size: cover;
+     height: 414px;
 }
 
 .filter {
      background-image: url("images/fon_image.jpg");
      background-size: cover;
-     width: 1200px;
      height: 412px;
 }
 
@@ -22,5 +26,33 @@ ul {
 }
 
 .catalog-container {
+     display: inline;
+}
+
+.pagination-list {
+     display: inline;
+}
+
+/*.social-list {
+     display: flex;
+     flex-direction: row;
+} */
+
+.social-item {
+     display: inline;
+}
+
+footer {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+}
+
+/*.navigation-list {
+     display: flex;
+     flex-direction: row;
+} */
+
+.navigation-item {
      display: inline;
 }
