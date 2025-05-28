@@ -1,11 +1,12 @@
 .hero {
-     background-image: url("images/index-background.jpg");
+     background-image: url("images/index/index-background2.jpg");
      background-size: cover;
      height: 485px;
+
 }
 
 .subscription {
-     background-image: url("images/Subscribe.jpg");
+     background-image: url("images/index/subscribe.jpg");
      background-size: cover;
      height: 414px;
 }
