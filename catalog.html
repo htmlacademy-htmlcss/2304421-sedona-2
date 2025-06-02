@@ -41,11 +41,15 @@
 
   <main class="page-catalog">
     <div class="filter">
-      <p class="filter-title">Гостиницы Седоны</p>
-      <div class="filter-container">
-        <a class="breadcrumbs-main" href="index.html"><span class="visually-hidden">На главную</span></a>
-        <a class="breadcrumbs-catalog" href="catalog.html" aria-current="page">Гостиницы</a>
-      </div>
+      <h1 class="page-title">Гостиницы Седоны</h1>
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item">
+          <a class="breadcrumbs-link" href="index.html"><span class="visually-hidden">На главную</span></a>
+        </li>
+        <li class="breadcrumbs-list">
+          <a class="breadcrumbs-link" href="catalog.html" aria-current="page">Гостиницы</a>
+        </li>
+      </ul>
       <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="filter-form-group">
           <legend class="filter-form-title">Инфраструктура:</legend>
@@ -94,7 +98,6 @@
     </div>
 
     <section class="catalog">
-      <h1 class="visually-hidden">Результат поиска</h1>
       <h2 class="catalog-title">Найдено гостиниц: <span>38</span></h2>
       <select class="select-contlor" aria-label="сортировка">
         <option value="popular">Сначала популярные</option>
