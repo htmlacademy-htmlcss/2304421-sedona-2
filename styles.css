@@ -1,18 +1,18 @@
 .hero {
      background-image: url("images/index/index-background.jpg");
      background-size: cover;
-     height: 485px;
+     min-height: 485px;
 
 }
 
 .subscription {
-     background-image: url("images/index/subscribe.jpg");
+     background-image: url("images/subscribe-background.jpg");
      background-size: cover;
-     height: 414px;
+     min-height: 414px;
 }
 
 .filter {
-     background-image: url("images/catalog/catalog-background.jpg");
+     background-image: url("images/filter-background.jpg");
      background-size: cover;
      height: 412px;
 }
