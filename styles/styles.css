@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
@@ -16,11 +16,26 @@
 
 body {
   font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  background-color: #F2F2F2;
+  width: 100% auto;
+  margin: 0;
+}
+
+.page {
   background-color: #ffffff;
   width: 1200px;
+  margin: auto;
+}
+
+.page-header {
+  background-color: #ffffff;
+  width: 1200px;
+  margin: auto;
 }
 
 .page-header a {
@@ -33,9 +48,10 @@ body {
 
 .hero {
   background-color: #e08989;
-  background-image: url("../images/index/index-background.jpg");
-  background-size: 100% auto;
+  background-image: url("../images/index/divider.png"), url("../images/index/index-background.jpg");
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
+  background-position: left bottom, left top;
   text-align: center;
 
 }
@@ -159,12 +175,100 @@ body {
 .service-subtitle-description {
   text-align: center;
 }
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-caption {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.search-description {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.button-search {
+  background-color: #756157;
+  width: 376px;
+  height: 52px;
+  border-radius: 4px;
+  padding: 8px 50px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  box-sizing: border-box;
+}
 .subscription {
      background-image: url("../images/subscribe-background.jpg");
      background-size: cover;
      min-height: 414px;
 }
 
+.subscription-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
+
+.subscription-caption {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subscription-form {
+  display: flex;
+  justify-content: center;
+}
+
+.subscription-form-name {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  margin: 14px 0;
+}
+
+.subscription-email {
+  border: 1px solid #000000;
+  border-radius: 4px 0 0 4px;
+  padding: 12px 20px;
+  width: 452px;
+  height: 52px;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.subscription-button {
+  border-radius: 0 4px 4px 0;
+  padding: 8px 0;
+  width: 232px;
+  height: 52px;
+  background-color: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-family: inherit;
+}
 .filter {
      background-image: url("images/filter-background.jpg");
      background-size: cover;
@@ -203,6 +307,68 @@ li {
 
 .social-item {
      display: inline;
+}
+
+.page-footer {
+  background-color: #ffffff;
+  width: 1200px;
+  min-height: 120px;
+  margin: auto;
+}
+
+.button-social-vk {
+  background-image: url("../images/logo/vk.svg");
+  width: 24px;
+  height: 14px;
+  background-size: 24px 14px;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.button-social-telegram {
+  background-image: url("../images/logo/telegram.svg");
+  width: 18px;
+  height: 15px;
+  background-size: 18px 15px;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.button-social-youtube {
+  background-image: url("../images/logo/youtube.svg");
+  width: 22px;
+  height: 17px;
+  background-size: 22px 17px;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  text-decoration: none;
+}
+
+.developer-logo {
+  background-image: url("../images/logo/logo-html-academy.svg");
+  display: block;
+  background-size: 115px 33px;
+  width: 115px;
+  height: 33px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
 }
 
 footer {
