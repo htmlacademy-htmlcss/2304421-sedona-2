@@ -38,6 +38,16 @@ body {
   margin: auto;
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.main-logo-image {
+  margin-right: 46px;
+}
+
 .navigation-link {
   font-weight: 700;
   font-size: 20px;
@@ -45,6 +55,7 @@ body {
   text-transform: capitalize;
   color: #000000;
   text-decoration: none;
+  margin-right: 32px;
 }
 
 
@@ -52,6 +63,7 @@ body {
   display: flex;
   align-items: center;
   padding: 0;
+  margin: 0 70px;
 }
 
 .navigation-item {
@@ -76,6 +88,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   display: block;
+  margin-left: 33px;
 }
 
 .navigation-button {
@@ -92,6 +105,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+  margin-left: 43px;
 }
 
 .hero {
