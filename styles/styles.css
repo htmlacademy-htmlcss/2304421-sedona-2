@@ -70,8 +70,21 @@ body {
   list-style-type: none;
 }
 
+
 .navigation-user .navigation-item {
   position: relative;
+}
+
+.navigation-item-curent-page {
+  position: relative;
+}
+
+.navigation-item-curent-page span {
+    border-bottom: 2px solid #756257;
+    display: block;
+    width: 68px;
+    position: absolute;
+    inset-block-start: 43px;
 }
 
 .navigation-link-search {
