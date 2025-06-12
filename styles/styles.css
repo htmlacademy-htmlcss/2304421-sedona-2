@@ -70,6 +70,10 @@ body {
   list-style-type: none;
 }
 
+.navigation-user .navigation-item {
+  position: relative;
+}
+
 .navigation-link-search {
   background-image: url("../images/icons/search.svg");
   background-size: 18px 18px;
@@ -89,6 +93,22 @@ body {
   background-repeat: no-repeat;
   display: block;
   margin-left: 33px;
+}
+
+.navigation-item div {
+  background-color: #7DB54F;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 10px;
+  line-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  inset-block-start: -4px;
+  inset-inline-start: -10px;
 }
 
 .navigation-button {
