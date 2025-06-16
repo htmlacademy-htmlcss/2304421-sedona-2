@@ -95,8 +95,8 @@
         <fieldset class="filter-form-group filter-form-group-cost">
           <legend class="filter-form-title">Стоимость, ₽:</legend>
           <div class="filter-form-group-price">
-            <input class="filter-price-control-left" type="number" id="number" value="0" max="9000" min="0" placeholder="от" />
-            <input class="filter-price-control-right" type="number" id="number" value="9000" max="9000" min="0" placeholder="до" />
+            <input class="filter-price-control" type="number" id="number" value="0" max="9000" min="0" placeholder="от" />
+            <input class="filter-price-control filter-price-control-right" type="number" id="number" value="9000" max="9000" min="0" placeholder="до" />
           </div>
         </fieldset>
         <div>
@@ -115,8 +115,8 @@
       </select>
       <div class="catalog-viewer">
         <a class="catalog-view catalog-view-active" href="#"><span class="visually-hidden">Плитками</span></a>
-        <a class="catalog-view" href="#"><span class="visually-hidden">По одной</span></a>
-        <a class="catalog-view" href="#"><span class="visually-hidden">Списком</span></a>
+        <a class="catalog-view catalog-view-single" href="#"><span class="visually-hidden">По одной</span></a>
+        <a class="catalog-view catalog-view-list" href="#"><span class="visually-hidden">Списком</span></a>
       </div>
       <ul class="catalog-list">
         <li class="catalog-item">
@@ -137,7 +137,7 @@
           <a class="catalog-card" href="#"><h3 class="catalog-card-title">Villas at Poco Diablo</h3></a>
           <p class="catalog-card-price">Гостиница От 5000 ₽</p>
           <a class="button more-button" href="#">Подробнее</a>
-          <button class="button favorite-button" type="button">В избранное</button>
+          <button class="button favorite-button-added" type="button">В избранном</button>
           <p class="stars four-stars"><span class="visually-hidden">Отель четыре звезды</span></p>
           <span class="rating">Рейтинг: 9,2</span>
         </li>
@@ -164,23 +164,23 @@
           <span class="rating">Рейтинг: 5,0</span>
         </li>
       </ul>
-      <ul class="pagination">
-        <li class="pagination-list">
-          <a class="pagination-link pagination-current pagination-disabled" href="#">1</a>
+      <ul class="pagination-list">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-current pagination-disabled" href="#" aria-current="page">1</a>
         </li>
-        <li class="pagination-list">
+        <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
         </li>
-        <li class="pagination-list">
+        <li class="pagination-item">
           <a class="pagination-link" href="#">3</a>
         </li>
-        <li class="pagination-list">
+        <li class="pagination-item">
           <a class="pagination-link" href="#">4</a>
         </li>
-        <li class="pagination-list">
-          <span class="pagination-more">...</span>
+        <li class="pagination-item">
+          <span class="pagination-link pagination-dot">...</span>
         </li>
-        <li class="pagination-list">
+        <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>

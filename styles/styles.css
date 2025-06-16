@@ -459,10 +459,6 @@ body {
      display: inline;
 }
 
-.pagination-list {
-     display: inline;
-}
-
 .social-list {
      display: flex;
      gap: 13px;
@@ -564,6 +560,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 35px 70px 70px;
+  margin-bottom: 50px;
 }
 
 .page-title {
@@ -611,10 +608,10 @@ body {
   display: flex;
 }
 
-.filter-price-control-left {
+.filter-price-control {
 border-radius: 4px 0 0 4px;
 background-color: #f2f2f2;
-border-color:#f2f2f2;
+border: none;
 padding: 12px 20px;
 width: 143px;
 height: 48px;
@@ -623,20 +620,11 @@ font-size: 18px;
 line-height: 24px;
 box-sizing: border-box;
 color: inherit;
+margin-right: 2px;
 }
 
 .filter-price-control-right {
 border-radius:  0 4px 4px 0;
-background-color: #f2f2f2;
-border-color:#f2f2f2;
-padding: 12px 20px;
-width: 143px;
-height: 48px;
-font-weight: 700;
-font-size: 18px;
-line-height: 24px;
-box-sizing: border-box;
-color: inherit;
 }
 
 .filter-form-title {
@@ -691,7 +679,194 @@ margin-bottom: 32px;
 cursor: pointer;
 }
 
-.form-button-reset{
+.form-button-reset {
   background: none;
   box-shadow: none;
+}
+
+.catalog-view {
+border: 2px solid #E5E5E5;
+border-radius: 4px;
+padding: 14px 12px;
+width: 48px;
+height: 48px;
+box-sizing: border-box;
+display: block;
+}
+
+.catalog-view-active {
+  background-image: url("../images/icons/plate.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-color: #000000;
+}
+
+.catalog-view-single {
+  background-image: url("../images/icons/alone.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-view-list {
+  background-image: url("../images/icons/list.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.catalog-viewer {
+  display: flex;
+  gap: 8px;
+}
+
+.catalog-item {
+  list-style-type: none;
+}
+
+.catalog-list {
+  padding: 0;
+  /*margin: 0 90px;*/
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 90px;
+}
+
+.catalog-title {
+  margin: 0;
+}
+
+.select-contlor {
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  padding: 12px 20px;
+  width: 292px;
+  height: 49px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.catalog-card {
+  text-decoration: none;
+}
+
+.catalog-card-price {
+  text-align: justify;
+  margin: 0 0 16px;
+}
+
+.catalog-card-image {
+  display: block;
+  margin: 60px 0 16px;
+}
+
+.catalog-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: #000000;
+  margin: 0 0 16px;
+}
+
+.button {
+  font-family: 'PT Sans';
+  border-radius: 4px;
+  width: 140px;
+  height: 36px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  display: inline-block;
+  border: none;
+  padding: 8px 18px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.more-button {
+  text-decoration: none;
+  background-color: #756157;
+}
+
+.favorite-button {
+  background-color: #82B3D3;
+}
+
+.favorite-button-added {
+  background-color: #7DB54F;
+}
+
+.rating {
+  border-radius: 4px;
+  width: 140px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+  background-color: #F2F2F2;
+  border: none;
+  padding: 8px 18px;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  display: block;
+}
+
+.stars {
+  background-image: url("../images/icons/star1.svg");
+  background-size: 18px 17px;
+  background-repeat: repeat-x;
+  background-position-y: center;
+  width: 73px;
+  height: 37px;
+}
+
+.pagination-list {
+  display: flex;
+  gap: 8px;
+  margin: 0 100% 0 0;
+  padding: 0;
+}
+
+.pagination-item {
+    list-style-type: none;
+}
+
+.pagination-link {
+  background-color: #82B3D3;
+  border-radius: 4px;
+  border: none;
+  width: 60px;
+  height: 60px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.8;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+  cursor: default;
+}
+
+.pagination-dot {
+  background-color: #ffffff;
+  color: #000000;
 }
