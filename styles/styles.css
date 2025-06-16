@@ -417,6 +417,7 @@ body {
 
 .subscription-button {
   border-radius: 0 4px 4px 0;
+  border: none;
   padding: 8px 0;
   width: 232px;
   height: 52px;
@@ -482,7 +483,7 @@ body {
   box-sizing: border-box;
 }
 
-.button-social-vk {
+.social-vk-link {
   background-image: url("../images/logo/vk.svg");
   width: 24px;
   height: 14px;
@@ -491,7 +492,7 @@ body {
   display: block;
 }
 
-.button-social-telegram {
+.social-telegram-link {
   background-image: url("../images/logo/telegram.svg");
   width: 18px;
   height: 15px;
@@ -500,7 +501,7 @@ body {
   display: block;
 }
 
-.button-social-youtube {
+.social-youtube-link {
   background-image: url("../images/logo/youtube.svg");
   width: 22px;
   height: 17px;
@@ -735,7 +736,7 @@ display: block;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  margin: 0 90px;
+  margin: 0 90px 60px;
 }
 
 .catalog-title {
@@ -869,4 +870,21 @@ display: block;
 .pagination-dot {
   background-color: #ffffff;
   color: #000000;
+}
+
+.subscription-title-catalog {
+  color: #000000;
+}
+
+.subscription-caption-catalog {
+  color: inherit;
+}
+
+.subscription-catalog {
+  padding: 96px 0 104px;
+}
+
+.subscription-email-catalog {
+  background-color: #f2f2f2;
+  border: none;
 }
