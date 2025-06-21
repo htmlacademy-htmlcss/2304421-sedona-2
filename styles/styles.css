@@ -26,17 +26,24 @@ body {
   margin: 0;
 }
 
-.page {
+.container {
   background-color: #ffffff;
   width: 1200px;
   margin: auto;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
-.page-header {
+/* .page {
   background-color: #ffffff;
   width: 1200px;
   margin: auto;
-}
+} */
+
+/* .page-header {
+  background-color: #ffffff;
+  width: 1200px;
+  margin: auto;
+} */
 
 .navigation {
   display: flex;
@@ -210,7 +217,7 @@ body {
   margin: 0 auto 30px;
 }
 
-.blue-container {
+.blue-box {
   padding: 102px 85px;
   width: 400px;
   height: 385px;
@@ -218,36 +225,35 @@ body {
   box-sizing: border-box;
 }
 
-.blue-container div {
+.blue-box div {
   width: 60px;
   height: 2px;
   background-color:rgba(255, 255, 255, 0.3);
   margin: 0 auto 30px;
 }
 
-.gray-container div {
+.gray-box div {
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
   margin: 0 auto 30px;
 }
 
-.white-container {
+.white-box {
   padding: 112px 85px;
   width: 400px;
   height: 385px;
   box-sizing: border-box;
 }
 
-.white-container div {
+.white-box div {
   width: 60px;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.3);
   margin: 0 auto 30px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
 }
 
-.gray-container {
+.gray-box {
   padding: 112px 85px;
   width: 400px;
   height: 385px;
@@ -255,7 +261,7 @@ body {
   box-sizing: border-box;
 }
 
-.gray-container-service {
+.gray-box-service {
   padding: 81px 85px;
   width: 400px;
   height: 385px;
@@ -263,7 +269,7 @@ body {
   box-sizing: border-box;
 }
 
-.white-container-service {
+.white-box-service {
   padding: 81px 85px;
   width: 400px;
   height: 385px;
@@ -456,9 +462,9 @@ body {
   margin-bottom: 96px;
 }
 
-.catalog-container {
+/* .catalog-container {
      display: inline;
-}
+} */
 
 .social-list {
      display: flex;
@@ -475,8 +481,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  width: 1200px;
   min-height: 120px;
   margin: auto;
   padding: 45px 70px 35px 81px;
@@ -822,14 +826,30 @@ display: block;
   box-sizing: border-box;
   text-transform: uppercase;
   display: block;
+  position: relative;
+    top: -56px;
+    left: 145px;
 }
 
 .stars {
   background-image: url("../images/icons/star1.svg");
-  background-size: 18px 17px;
+  background-size: 25px 17px;
   background-repeat: repeat-x;
   background-position-y: center;
-  width: 73px;
+}
+
+.four-stars {
+  width: 100px;
+  height: 37px;
+}
+
+.three-stars {
+  width: 75px;
+  height: 37px;
+}
+
+.two-stars {
+  width: 50px;
   height: 37px;
 }
 
