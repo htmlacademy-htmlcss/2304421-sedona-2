@@ -738,13 +738,18 @@ display: block;
 .catalog {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   margin: 0 90px 60px;
 }
 
 .catalog-title {
-  margin: 0;
+font-weight: 700;
+font-size: 30px;
+line-height: 120%;
+text-transform: uppercase;
+color: #000000;
+margin: 0;
 }
 
 .select-contlor {
