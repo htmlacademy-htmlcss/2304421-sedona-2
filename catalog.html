@@ -95,8 +95,8 @@
           <fieldset class="filter-form-group filter-form-group-cost">
             <legend class="filter-form-title">Стоимость, ₽:</legend>
             <div class="filter-form-group-price">
-              <input class="filter-price-control" type="number" id="number" value="0" max="9000" min="0" placeholder="от" />
-              <input class="filter-price-control filter-price-control-right" type="number" id="number" value="9000" max="9000" min="0" placeholder="до" />
+              <input class="filter-price-control" type="number" id="min-price" value="0" max="9000" min="0" placeholder="от">
+              <input class="filter-price-control filter-price-control-right" type="number" id="max-price" value="9000" max="9000" min="0" placeholder="до">
             </div>
           </fieldset>
           <div>
@@ -108,7 +108,7 @@
 
       <section class="catalog">
         <h2 class="catalog-title">Найдено гостиниц: <span>38</span></h2>
-        <select class="select-contlor" aria-label="сортировка">
+        <select class="select-control" aria-label="сортировка">
           <option value="popular">Сначала популярные</option>
           <option value="cheap" selected>Сначала дешёвые</option>
           <option value="expensive">Сначала дорогие</option>
