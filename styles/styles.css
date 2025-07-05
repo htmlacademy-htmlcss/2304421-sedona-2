@@ -760,8 +760,8 @@ display: block;
 .catalog-item {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 20px;
-  row-gap: 16px;
+  grid-template-rows: 1fr;
+  gap: 16px 20px;
   list-style-type: none;
   box-shadow: 0 0 0 1px #e6e6e6;
   padding: 20px;
@@ -809,10 +809,17 @@ margin-right: 65px;
   color: #333333;
 }
 
-.catalog-card {
+.catalog-card-picture {
   grid-column: 1 / -1;
   text-decoration: none;
 }
+
+.catalog-card-caption {
+  grid-column: 1 / -1;
+  max-width: 300px;
+}
+
+
 
 .catalog-card-price {
   text-align: justify;
