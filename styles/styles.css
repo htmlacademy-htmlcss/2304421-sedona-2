@@ -111,22 +111,11 @@ body {
     cursor: auto;
 }
 
-/* .navigation-item:nth-child(3) .navigation-link-current::after {
-  content: "";
-  border-bottom: 2px solid #756257;
-  display: block;
-  width: 100%;
-  position: relative;
-  top: 20px;
-  cursor: auto;
-} */
-
 .filter-start-end-price {
   font-size: 18px;
   line-height: 24px;
   color: #000000;
   text-transform: lowercase;
-  /* position: absolute; */
 }
 
 .filter-start-end-price:first-child {
@@ -135,8 +124,6 @@ body {
   justify-self: end;
   align-self: center;
   margin-right: 20px;
-  /* left: 110px; */
-  /* bottom: 13px; */
 }
 
 .filter-start-end-price:nth-child(3) {
@@ -145,8 +132,6 @@ body {
   justify-self: end;
   align-self: center;
   margin-right: 20px;
-  /* left: 250px; */
-  /* bottom: 13px; */
 }
 
 .filter-price-control::-webkit-outer-spin-button,
@@ -162,7 +147,6 @@ body {
   height: 64px;
   background-position: center;
   background-repeat: no-repeat;
-  /* display: block; */
   text-decoration: none;
 }
 
@@ -175,7 +159,7 @@ body {
   border-radius: 50%;
   color: #ffffff;
   font-size: 10px;
-  /* line-height: 200%; */
+  line-height: 200%;
   text-align: center;
 }
 
@@ -186,17 +170,6 @@ body {
 .heart-icon {
   background-image: url("../images/icons/heart.svg");
 }
-
-/* .navigation-user-link {
-  background-image: url("../images/icons/heart.svg");
-  background-size: 18px 17px;
-  width: 20px;
-  height: 20px;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: block;
-  text-decoration: none;
-} */
 
 .navigation-link-favorite::after {
   content: "12";
@@ -401,39 +374,6 @@ body {
   margin: 0 0 30px 0;
   color: #000000;
 }
-
-/* .service-item:first-child .service-subtitle::before {
-  content: "";
-  background-image: url("../images/icons/house.svg");
-  background-size: contain;
-  width: 75px;
-  height: 72px;
-  background-repeat: no-repeat;
-  margin: 0 auto 30px;
-  display: block;
-}
-
-.service-item:nth-child(2) .service-subtitle::before {
-  content: "";
-  background-image: url("../images/icons/food.svg");
-  background-size: contain;
-  width: 75px;
-  height: 72px;
-  background-repeat: no-repeat;
-  margin: 0 auto 30px;
-  display: block;
-}
-
-.service-item:nth-child(3) .service-subtitle::before {
-  content: "";
-  background-image: url("../images/icons/gift.svg");
-  background-size: contain;
-  width: 75px;
-  height: 72px;
-  background-repeat: no-repeat;
-  margin: 0 auto 30px;
-  display: block;
-} */
 
 .service-subtitle-description {
   margin: 0 auto;
@@ -668,27 +608,10 @@ body {
   mask-size: 22px 17px;
 }
 
-/* .social-telegram-link {
-  background-image: url("../images/logo/telegram.svg");
-  background-size: 18px 15px;
-  width: 18px;
-  height: 15px;
-  background-repeat: no-repeat;
-  display: block;
-} */
-
-/* .social-youtube-link {
-  background-image: url("../images/logo/youtube.svg");
-  background-size: 22px 17px;
-  width: 22px;
-  height: 17px;
-  background-repeat: no-repeat;
-  display: block;
-} */
-
 .contacts {
   font-style: inherit;
 }
+
 
 .contacts-phone {
   font-size: 40px;
@@ -713,9 +636,7 @@ body {
 }
 
 .developer-logo {
-  /* background-image: url("../images/logo/logo-html-academy.svg"); */
   display: block;
-  /* background-size: 115px 33px; */
   width: 115px;
   height: 33px;
 }
