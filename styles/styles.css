@@ -629,37 +629,41 @@ body {
 }
 
 .social-link {
+  &::before {
+  content: " ";
   width: 47px;
   height: 40px;
   mask-repeat: no-repeat;
   mask-position: center;
   display: block;
   background-color: #83B3D3;
+  }
 
- &:hover {
+
+ &:hover::before {
   background-color: #68A2CA;
  }
 
- &:focus {
+ &:focus::before {
   background-color: #68A2CA;
  }
 
-&:active {
+ &:active::before {
   background-color: rgba(104, 162, 202, 0.3);
  }
 }
 
-.vk-link {
+.vk-link::before {
   mask-image: url("../images/logo/vk.svg");
   mask-size: 24px 14px;
 }
 
-.telegram-link {
+.telegram-link::before {
   mask-image: url("../images/logo/telegram.svg");
   mask-size: 18px 15px;
 }
 
-.youtube-link {
+.youtube-link::before {
   mask-image: url("../images/logo/youtube.svg");
   mask-size: 22px 17px;
 }
