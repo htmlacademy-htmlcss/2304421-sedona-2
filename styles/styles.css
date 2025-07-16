@@ -640,13 +640,11 @@ body {
   }
 }
 
-.developer-logo {
-  display: block;
-  width: 115px;
-  height: 33px;
+.developer-logo-svg {
+  vertical-align: middle;
 }
 
-.developer-logo-svg {
+.developer-logo {
   fill: #000;
 
   &:hover {
