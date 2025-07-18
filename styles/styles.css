@@ -45,13 +45,16 @@ body {
 
 .navigation {
   display: flex;
-  justify-content: space-between;
-  height: 64px;
+  justify-content: start;
 }
 
 .main-logo {
   margin-right: 44px;
   position: relative;
+}
+
+.main-logo-image {
+  margin-bottom: -10px;
 }
 
 .navigation-link {
@@ -62,13 +65,16 @@ body {
   text-transform: capitalize;
   color: #000000;
   text-decoration: none;
+  padding: 19px 0;
 }
 
 
 .navigation-list {
   display: flex;
   align-items: center;
-  max-width: 450px;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 510px;
   padding: 0;
   margin: 0;
 }
@@ -77,16 +83,22 @@ body {
   list-style-type: none;
 }
 
-.navigation-item:not(:last-child) {
+/* .navigation-item:not(:last-child) {
   margin-right: 32px;
 }
 
 .navigation-user .navigation-item:first-child {
   margin-right: 25px;
-}
+} */
 
 .navigation-user {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 366px;
+  margin: 0;
   margin-left: auto;
+  padding: 0;
 }
 
 .navigation-user-item {
@@ -97,18 +109,18 @@ body {
   margin-right: 20px;
 }
 
-.navigation-item-curent-page {
+/* .navigation-item-curent-page {
   position: relative;
-}
+} */
 
 .navigation-link-current::after{
     content: "";
     position: absolute;
-    top: 44px;
     border-bottom: 2px solid #756257;
     display: block;
     width: 100%;
     cursor: auto;
+    margin-top: 19px;
 }
 
 .filter-start-end-price {
@@ -222,7 +234,7 @@ body {
 }
 
 .hero {
-  background-color: #e08989;
+  background-color: #b8d6e8;
   background-image: url("../images/index/divider.svg"), url("../images/index/index-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
@@ -244,7 +256,8 @@ body {
   text-align: center;
   text-transform: uppercase;
   color:#000000;
-  margin: 0 0 25px 0;
+  margin: 0 auto 25px;
+  max-width: 650px;
 }
 
 .advantages-caption {
@@ -254,22 +267,12 @@ body {
   margin: 0 0 90px 0;
 }
 
-.advantages-big-subtitle {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
-}
+/* .advantages-picture-subtitle {
+  color: #fff;
+} */
 
-.advantages-big-subtitle::after {
-  content: "";
-  width: 60px;
-  height: 2px;
+.advantages-subtitle.advantages-picture-subtitle::after {
   background-color:rgba(255, 255, 255, 0.3);
-  margin: 30px auto;
-  display: block;
 }
 
 .advantages-description {
@@ -283,8 +286,11 @@ body {
   min-height: 385px;
   background-color: rgba(131, 179, 211, 12%);
   box-sizing: border-box;
-  text-align: center;
   flex-grow: 1;
+}
+
+.advantages-picture-item:last-child img {
+  order: -1;
 }
 
 .advantages-item:nth-child(odd) {
@@ -297,7 +303,13 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 175px;
+}
+
+.advantages-picture-subtitle {
+  color: #fff;
 }
 
 .advantages-subtitle::after {
@@ -327,6 +339,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0 auto 20px;
+  max-width: 670px;
 }
 
 .service-description {
@@ -383,6 +396,7 @@ body {
 .service-subtitle-description {
   margin: 0 auto;
   max-width: 240px;
+  text-wrap-style: balance;
 }
 
 .search {
@@ -406,6 +420,7 @@ body {
   line-height: 26px;
   text-align: center;
   margin: 0 auto 54px;
+  text-wrap-style: balance;
 }
 
 .button-search {
@@ -458,6 +473,7 @@ body {
   text-align: center;
   color: #ffffff;
   margin: 0 auto 54px;
+  max-width: 545px;
 }
 
 .subscription-form {
@@ -469,21 +485,27 @@ body {
 .subscription-form-name {
   grid-area: 1 / 1 / 2 / 2;
   z-index: 1;
+  justify-self: start;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-  margin: 14px 0;
+  margin: 14px 20px;
   transition: transform 0.2s ease-out, top 0.2s ease-out, left 0.2s ease-out;
 }
 
 .subscription-form:focus-within label {
-  transform: translateY(calc(90%));
-  font-size: 17px;
+  /* transform: translate(0, 4px) scale(1); */
+  /* transform: translateY(calc(90%));
+  font-size: 17px; */
+  color: #ffffff;
+  transform: translate(-3px, -40px) scale(1.3);
+  cursor: pointer;
+  transition: all .3s;
 }
 
 .subscription-email {
   grid-area: 1 / 1 / 2 / 2;
-  border: 1px solid #000000;
+  border: none;
   border-radius: 4px 0 0 4px;
   padding: 12px 20px;
   width: 452px;
@@ -491,6 +513,15 @@ body {
   font-family: inherit;
 }
 
+.subscription-email::placeholder {
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.subscription-email:focus-within::placeholder,
+.subscription-email:focus::placeholder {
+  opacity: 1;
+}
 .subscription-button {
   grid-area: 1 / 2 / 2 / 2;
   border-radius: 0 4px 4px 0;
@@ -528,16 +559,16 @@ body {
   margin: 0 0 64px 0;
 }
 
-.advantages-big-item {
+.advantages-picture-item {
   display: flex;
   background-color: #82B3D3;
   box-sizing: border-box;
   text-align: center;
-  color: #ffffff;
   margin: 0;
+  color: #fff;
 }
 
-.advantages-big-box {
+.advantages-picture-container {
   padding: 102px 80px;
   min-width: 400px;
   box-sizing: border-box;
@@ -815,17 +846,15 @@ color: #ffffff;
 display: block;
 font-weight: 700;
 font-size: 16px;
-line-height: 21px;
+line-height: 1.25;
 text-transform: uppercase;
 text-align: center;
 background-color: #82B3D3;
 border: none;
-box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 color:#ffffff;
 border-radius: 4px;
 padding: 8px 40px;
-width: 191px;
-height: 36px;
+min-width: 191px;
 margin-bottom: 32px;
 cursor: pointer;
 
@@ -884,14 +913,12 @@ width: 48px;
 height: 48px;
 box-sizing: border-box;
 display: block;
+background-repeat: no-repeat;
+background-position: center;
 
  &:hover {
   border-color: #000;
  }
-
- /* &:focus {
-  border: 2px solid #68A2CA;
- } */
 
  &:active {
   border-color: #000;
@@ -900,23 +927,22 @@ display: block;
 
 
 
-.catalog-view-active {
+.catalog-view-plates {
   background-image: url("../images/icons/plate.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  border-color: #000000;
+
 }
 
 .catalog-view-single {
   background-image: url("../images/icons/alone.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+
 }
 
 .catalog-view-list {
   background-image: url("../images/icons/list.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+}
+
+.catalog-view-active {
+  border-color: #000000;
 }
 
 .catalog-viewer {
@@ -1133,7 +1159,7 @@ margin-right: 65px;
   margin: 0;
 }
 
-.fife-stars {
+.five-stars {
   width: 125px;
 }
 
