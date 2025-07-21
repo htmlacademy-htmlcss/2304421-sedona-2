@@ -152,6 +152,45 @@ body {
   margin: 0;
 }
 
+.range-scale {
+  position: relative;
+}
+
+.range-toggle {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 20%;
+  background-color: var(--background-default);
+  padding: 0;
+}
+
+.min-price::before {
+  content: "";
+  width: 287px;
+  height: 4px;
+  background-color: #fff;
+  opacity: 0.3;
+  display: block;
+}
+
+.max-price {
+  position: absolute;
+  right: 61px;
+
+  &::after {
+    content: "";
+    width: 226px;
+    height: 4px;
+    background-color: var(--background-default);
+    display: block;
+    left: -206px;
+    position: absolute;
+    transform: translateY(-50%);
+  }
+}
+
+
 .navigation-user-link {
   display: grid;
   background-size: 18px 18px;
@@ -712,7 +751,7 @@ body {
   background-image: url("../images/filter-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 67px;
   box-sizing: border-box;
 }
 
@@ -775,8 +814,7 @@ body {
 .filter-form-group-price {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* display: flex; */
-  /* position: relative; */
+  margin-bottom: 36px;
 }
 
 .filter-price-control {
