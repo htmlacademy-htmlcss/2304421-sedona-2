@@ -26,7 +26,7 @@
             <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-user-item">
             <a class="navigation-user-link search-icon" href="#"><span class="visually-hidden">Поиск</span></a>
           </li>
@@ -59,16 +59,22 @@
             <legend class="filter-form-title">Инфраструктура:</legend>
             <ul class="filter-form-list">
               <li class="filter-form-item">
-                <input class="filter-form-control" type="checkbox" id="pool" name="pool" value="pool" checked />
-                <label class="filter-form-label" for="pool">Бассейн</label>
+                <label class="filter-form-label" for="pool">
+                  <input class="filter-form-control" type="checkbox" id="pool" name="pool" value="pool" checked />
+                  <span>Бассейн</span>
+                </label>
               </li>
               <li class="filter-form-item">
-                <input class="filter-form-control" type="checkbox" id="lot" name="lot" value="lot" checked />
-                <label class="filter-form-label" for="lot">Парковка</label>
+                <label class="filter-form-label" for="lot">
+                  <input class="filter-form-control" type="checkbox" id="lot" name="lot" value="lot" checked />
+                  <span>Парковка</span>
+                </label>
               </li>
               <li class="filter-form-item">
-                <input class="filter-form-control" type="checkbox" id="w-f" name="wi-fi" value="wi-fi" />
-                <label class="filter-form-label" for="w-f">Wi-Fi</label>
+                <label class="filter-form-label" for="w-f">
+                  <input class="filter-form-control" type="checkbox" id="w-f" name="wi-fi" value="wi-fi" />
+                  <span>Wi-Fi</span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -76,16 +82,22 @@
             <legend class="filter-form-title">Тип Жилья:</legend>
             <ul class="filter-form-list">
               <li class="filter-form-item">
-                <input class="filter-form-control" type="radio" id="inn" name="accommodation" value="inn" checked />
-                <label class="filter-form-label" for="inn">Гостиница</label>
+                <label class="filter-form-label" for="inn">
+                  <input class="filter-form-control-housing" type="radio" id="inn" name="accommodation" value="inn" checked />
+                  <span>Гостиница</span>
+                </label>
               </li>
               <li class="filter-form-item">
-                <input class="filter-form-control" type="radio" id="motel" name="accommodation" value="motel" />
-                <label class="filter-form-label" for="motel">Мотель</label>
+                <label class="filter-form-label" for="motel">
+                  <input class="filter-form-control-housing" type="radio" id="motel" name="accommodation" value="motel" />
+                  <span>Мотель</span>
+                </label>
               </li>
               <li class="filter-form-item">
-                <input class="filter-form-control" type="radio" id="apartment" name="accommodation" value="apartment" />
-                <label class="filter-form-label" for="apartment">Апартаменты</label>
+                <label class="filter-form-label" for="apartment">
+                  <input class="filter-form-control-housing" type="radio" id="apartment" name="accommodation" value="apartment" />
+                  <span>Апартаменты</span>
+                </label>
               </li>
             </ul>
           </fieldset>
@@ -99,8 +111,8 @@
             </div>
             <div class="range">
               <div class="range-scale">
-                <button class="range-toggle min-price"><span class="visually-hidden">Задать минимальную цену</span></button>
-                <button class="range-toggle max-price"><span class="visually-hidden">Задать максимальную цену</span></button>
+                <button type="button" class="range-toggle min-price"><span class="visually-hidden">Задать минимальную цену</span></button>
+                <button type="button" class="range-toggle max-price"><span class="visually-hidden">Задать максимальную цену</span></button>
               </div>
             </div>
           </fieldset>
@@ -197,7 +209,7 @@
 
       <section class="subscription-catalog">
         <h2 class="subscription-title subscription-title-catalog">Подпишитесь на рассылку</h2>
-        <p class="subscription-caption subscription-caption-catalog">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+        <p class="subscription-caption subscription-caption-catalog">Только полезная информация и&nbsp;никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="subscription-form-name" for="email">Ваш e-mail</label>
           <input class="subscription-email subscription-email-catalog" type="email" id="email" name="user-email" autocomplete="on" placeholder="example@mail.com" required />
