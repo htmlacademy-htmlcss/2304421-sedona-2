@@ -65,7 +65,16 @@ body {
   text-transform: capitalize;
   color: #000000;
   text-decoration: none;
-  padding: 19px 0;
+  padding: 18px 0;
+
+  &:hover,
+  &:focus {
+    color: var(--background-basic-2);
+  }
+
+  &:active {
+    color: var(--text-background-small);
+  }
 }
 
 
@@ -200,7 +209,7 @@ body {
   display: grid;
   background-size: 18px 18px;
   width: 44px;
-  height: 64px;
+  height: 62px;
   background-position: center;
   background-repeat: no-repeat;
   text-decoration: none;
@@ -454,6 +463,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   margin: 0 auto 20px;
+  text-align: center;
 }
 
 .search-description {
@@ -520,6 +530,7 @@ body {
 
 .subscription-form {
   display: grid;
+  grid-template-columns: 452px auto;
   justify-content: center;
   justify-items: center;
 }
@@ -555,6 +566,10 @@ body {
   &:focus {
     background-color: var(--forms-element-3);
   }
+
+  &:disabled {
+    background-color: var(--buttons-disabled);
+  }
 }
 
 .subscription-email::placeholder {
@@ -571,7 +586,7 @@ body {
   grid-area: 1 / 2 / 2 / 2;
   border-radius: 0 4px 4px 0;
   border: none;
-  padding: 8px 0;
+  padding: 8px 10px;
   width: 232px;
   background-color: #82B3D3;
   font-weight: 700;
@@ -773,6 +788,7 @@ body {
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: 19px;
   padding: 0;
@@ -929,8 +945,7 @@ border-radius: 4px 0 0 4px;
 background-color: #f2f2f2;
 border: none;
 padding: 12px 40px 12px 20px;
-width: 143px;
-height: 48px;
+min-width: 143px;
 font-weight: 700;
 font-size: 18px;
 line-height: 24px;
@@ -941,6 +956,10 @@ margin-right: 2px;
  &:hover,
  &:focus {
   background-color: #e6e6e6;
+ }
+
+ &:disabled {
+  background-color: var(--buttons-disabled);
  }
 }
 
@@ -974,6 +993,10 @@ margin-bottom: 32px;
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:disabled {
+    background-color: var(--buttons-disabled);
   }
 }
 
@@ -1147,7 +1170,7 @@ margin: 0;
 .select-control {
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding: 12px 20px;
+  padding: 12px 35px 12px 20px;
   width: 292px;
   height: 49px;
   font-family: inherit;
@@ -1212,7 +1235,6 @@ margin: 0;
   font-family: inherit;
   border-radius: 4px;
   width: 140px;
-  height: 36px;
   font-weight: 700;
   font-size: 16px;
   line-height: 125%;
@@ -1293,9 +1315,8 @@ margin: 0;
 .rating {
   border-radius: 4px;
   width: 140px;
-  height: 37px;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 21px;
   text-align: center;
   background-color: #F2F2F2;
   border: none;
@@ -1351,8 +1372,8 @@ margin: 0;
   background-color: var(--background-second);
   border-radius: 4px;
   border: none;
-  width: 60px;
-  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -1411,7 +1432,7 @@ margin: 0;
 }
 
 .subscription-catalog {
-  padding: 96px 0 104px;
+  padding: 96px 70px 104px;
 }
 
 .subscription-email-catalog {
@@ -1488,6 +1509,11 @@ color: var(--texts-basic);
   &:focus,
   &:active {
     background-color: var(--forms-element-3);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: var(--texts-active);
   }
 }
 
@@ -1568,6 +1594,10 @@ line-height: 1.3;
   &:hover,
   &:focus {
     background-color: var(--forms-element-3);
+  }
+
+  &:disabled {
+    background-color: var(--buttons-disabled);
   }
 }
 
@@ -1686,6 +1716,10 @@ line-height: 1.3;
   &:active::before {
     background-color: var(--forms-elements-2);
   }
+
+  &:disabled {
+    background-color: var(--buttons-disabled);
+  }
 }
 
 .modal-form-find-button {
@@ -1761,6 +1795,14 @@ line-height: 1.3;
 
 .modal-container-close {
   display: none;
+}
+
+.modal-slose-button-focus {
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  background-color: var(--forms-elements-2);
+  border-radius: 50%;
 }
 
 :root {
