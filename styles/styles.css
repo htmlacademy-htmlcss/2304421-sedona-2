@@ -188,7 +188,6 @@ body {
   &:active {
     outline: 2px solid var(--background-second);
     box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
-    box-sizing: border-box;
   }
 }
 
