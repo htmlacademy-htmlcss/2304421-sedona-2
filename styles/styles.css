@@ -1784,7 +1784,7 @@ margin: 0;
   border: none;
   padding: 18px 77px;
   background-color: var(--background-second);
-  font-family: var(--font-family);
+  font-family: inherit;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.2;
