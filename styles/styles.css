@@ -568,10 +568,9 @@ body {
   width: 452px;
   box-sizing: border-box;
   font-family: inherit;
+  font-size: 18px;
 
   &::-webkit-input-placeholder {
-    font-size: 18px;
-    line-height: 24px;
     color: var(--texts-basic-6);
   }
 
@@ -585,8 +584,7 @@ body {
   }
 
   &:disabled {
-    background-color: var(--buttons-disabled);
-    z-index: 1;
+    background-color: var(--form-disabled);
   }
 }
 
@@ -1825,6 +1823,7 @@ margin: 0;
    --texts-brown-basic: #756157;
    --buttons-brown-hover: #615048;
    --buttons-disabled: #E5E5E5;
+   --form-disabled: rgba(242, 242, 242, 0.2);
    --background-second: #82B3D3;
    --background-second-hover: #68A2CA;
    --text-background-small: rgba(255, 255, 255, 0.3);
